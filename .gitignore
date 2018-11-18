@@ -15,6 +15,7 @@ nbproject
 /resources
 /resources/**
 /web/assets/**
+/web/uploads/**
 
 # windows thumbnail cache
 Thumbs.db

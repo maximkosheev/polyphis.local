@@ -1,0 +1,107 @@
+body{
+}
+
+.main-menu {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wrap .container {
+    margin-left: 150px;
+}
+
+/* demo menu */
+nav.navbar.bootsnav{
+    border: none;
+    background: none;
+}
+nav.navbar.bootsnav ul.nav > li{
+    margin-right: 10px;
+    width: 200px;
+    background-color: #255625;
+}
+nav.navbar.bootsnav ul.nav > li:before{
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+nav.navbar.bootsnav ul.nav > li > a{
+    padding: 15px;
+    margin: 0;
+    color: black;
+    z-index: 1;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > a{
+    padding: 15px 30px 15px 15px;
+}
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li.on > a{ color: blue; }
+nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after{
+    position: absolute;
+    margin: 0 0 0 7px;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown > ul{
+    top: 120%;
+}
+nav.navbar.bootsnav ul.nav > li.dropdown.on > ul{
+    top: 100%;
+}
+.dropdown-menu.multi-dropdown{
+    position: absolute;
+    left: -100% !important;
+}
+nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 300px;
+}
+
+@media only screen and (max-width:990px){
+    .dropdown-menu.multi-dropdown{ left: 0 !important; }
+    nav.navbar.bootsnav .navbar-toggle{
+        background: none;
+        color: #fff;
+    }
+    nav.navbar.bootsnav ul.nav > li{
+        margin-right: 0;
+    }
+
+    nav.navbar.bootsnav ul.nav > li:before{
+        width: 100%;
+        font-weight: normal;
+        color: #555;
+    }
+    nav.navbar.bootsnav ul.nav > li > a{
+        color: #333 !important;
+        border-top: none;
+    }
+    nav.navbar.bootsnav ul.nav > li > a:hover{
+        color: #333;
+    }
+    nav.navbar.bootsnav ul.nav > li.dropdown > ul{ top: 100%; }
+}
+
+.dropdown-menu li:hover {
+    background-color: #0000aa;
+}
+
+.side-menu {
+    float: left;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

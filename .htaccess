@@ -2,10 +2,6 @@ Options +FollowSymLinks
 #IndexIgnore */*
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} ^/uploads
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule .* - [L]
-
 RewriteCond %{REQUEST_URI} !^/(web)
 RewriteRule ^assets/(.*)$ /web/assets/$1 [L]
 RewriteRule ^css/(.*)$ /web/css/$1 [L]
